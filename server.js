@@ -1,4 +1,6 @@
+import  dotenv  from 'dotenv';
 
+dotenv.config();
 
 // import app from './src/app.js'
 import express from 'express'
@@ -19,7 +21,7 @@ app.get('/', (req, res) => {
 })
 import router from './src/Routes/airoute.js'
 app.use('/ai', router)
-const PORT = 1111
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`)
