@@ -2,8 +2,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import dotenv from 'dotenv'
 dotenv.config() 
 
-const genAI = new GoogleGenerativeAI(process.env.key);
-console.log(process.env.key)
+const genAI = new GoogleGenerativeAI('AIzaSyDvYKAHECtNMjBXWYsSBboRXiS2Ul-iUTg');
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash",
   systemInstruction:` Here’s a solid system instruction for your AI code reviewer:
 
