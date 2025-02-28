@@ -14,7 +14,11 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 import cors from 'cors'
-app.use(cors())
+app.use(cors({
+  origin: "https://code-review-tau.vercel.app", // Allow both production and local
+  methods: ["POST", "PUT", "DELETE", "GET"],
+  credentials: true, // Allow credentials
+}));
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
