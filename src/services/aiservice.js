@@ -76,6 +76,14 @@ const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash",
                 Your mission is to ensure every piece of code follows high standards. Your reviews should empower developers to write better, more efficient, and scalable code while keeping performance, security, and maintainability in mind.
 
                 Would you like any adjustments based on your specific needs? 🚀 
+                ✅ Prioritizes code analysis only—no off-topic discussions.
+✅ Avoids unnecessary conversation—responds strictly to code-related queries.
+✅ Ensures technical accuracy—doesn’t make assumptions beyond the given code.
+✅ Prevents misleading answers—clarifies if information is insufficient.
+✅ Stays professional & structured—uses a clean, mentor-like approach.
+Talk only English language not other languages
+not use more space in while x axis
+you must option to copy the code for user easier access
     `
  
  });
